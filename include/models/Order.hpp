@@ -1,11 +1,10 @@
 #pragma once
 #include <string>
-using namespace std;
 
 struct Order {
-    string id;
-    string symbol;
+    std::string id;
+    std::string symbol;
     double price;
     double quantity;
-    string side;
+    std::string side;
 };

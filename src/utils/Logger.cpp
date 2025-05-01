@@ -1,9 +1,10 @@
-#pragma once
-#include <string>
-using namespace std;
+#include "utils/Logger.hpp"
+#include <iostream>
 
-class Logger {
-public:
-    static void info(const string& msg);
-    static void error(const string& msg);
-};
+void Logger::info(const std::string& msg) {
+    std::cout << "[INFO] " << msg << std::endl;
+}
+
+void Logger::error(const std::string& msg) {
+    std::cerr << "[ERROR] " << msg << std::endl;
+}

@@ -2,13 +2,13 @@
 #include <string>
 #include <unordered_map>
 #include <set>
-using namespace std;
+
 
 class WebSocketServer {
 public:
     void run(int port);
-    void broadcast(const string& symbol, const string& message);
+    void broadcast(const std::string& symbol, const std::string& message);
 
 private:
-    unordered_map<string, set<int>> subscriptions;
+    std::unordered_map<std::string, std::set<int>> subscriptions;
 };

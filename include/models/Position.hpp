@@ -1,9 +1,9 @@
 #pragma once
 #include <string>
-using namespace std;
+
 
 struct Position {
-    string symbol;
+    std::string symbol;
     double size;
     double entryPrice;
 };
