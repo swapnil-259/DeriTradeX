@@ -8,6 +8,7 @@ public:
 
     nlohmann::json placeOrder(const nlohmann::json& order);
     bool cancelOrder(const std::string& orderId);
+    nlohmann::json modifyOrder(const std::string& orderId, const nlohmann::json& updatedFields);
     nlohmann::json getOrderbook(const std::string& symbol);
     nlohmann::json getPositions();
 

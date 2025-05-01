@@ -1,10 +1,10 @@
 #pragma once
+
 #include <string>
 #include <unordered_map>
 #include <set>
 
-
-class WebSocketServer {
+class DeriWebSocketServer {
 public:
     void run(int port);
     void broadcast(const std::string& symbol, const std::string& message);
