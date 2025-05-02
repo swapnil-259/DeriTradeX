@@ -4,7 +4,7 @@ project(DeriTradeX)
 set(CMAKE_CXX_STANDARD 17)
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
-    ${CMAKE_SOURCE_DIR}/third-party  
+    ${CMAKE_SOURCE_DIR}/third-party
     ${CURL_INCLUDE_DIR}
     ${OPENSSL_INCLUDE_DIR}
 )
